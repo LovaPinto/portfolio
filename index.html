@@ -78,7 +78,7 @@
                             </div>
                             <div class="info-item">
                                 <strong>Email :</strong>
-                                <span>lovasoa.alexis@email.com</span>
+                                <span>lovasoa.alexis@gmail.com</span>
                             </div>
                             <div class="info-item">
                                 <strong>Localisation :</strong>
@@ -208,7 +208,7 @@
                 <div class="contact-content">
                     <div class="contact-info reveal">
                         <h3>Mes coordonnées</h3>
-                        <p><strong>Email :</strong> lovasoa.alexis@email.com</p>
+                        <p><strong>Email :</strong> lovasoa.alexis@gmail.com</p>
                         <p><strong>Téléphone :</strong> +261 34 70 746 59</p>
                         <p><strong>Localisation :</strong> Androndra , Antananarivo</p>
                         <div class="social-links">
@@ -217,7 +217,11 @@
                             <a href="#" aria-label="Twitter">Twitter</a>
                         </div>
                     </div>
-                    <form class="contact-form reveal" action="#" method="post">
+                    <form class="contact-form reveal" action="https://formsubmit.co/lovasoa.alexis@gmail.com" method="POST" id="contactForm">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_honey" value="">
+                        <div id="form-notice" class="form-notice" role="status"></div>
                         <div class="form-group">
                             <input type="text" name="name" placeholder="Votre nom" required>
                         </div>
@@ -230,7 +234,7 @@
                         <div class="form-group">
                             <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                        <button type="submit" id="formSubmitBtn" class="btn btn-primary">Envoyer le message</button>
                     </form>
                 </div>
             </div>
@@ -244,6 +248,7 @@
     </footer>
 
     <script src="assets/js/index.js"></script>
+    <script src="assets/js/fonction.js"></script>
 </body>
 
 </html>
